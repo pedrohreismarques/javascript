@@ -1,0 +1,37 @@
+let : criar uma variável
+const : criar uma constante
+
+
+---- STRINGS ----
+
+No JS temos bibliotecas e métodos nativos para trabalhar com as variáveis dinâmicamente tipadas.
+
+    - .replace("Y", "y") : troca um caractere por outro
+
+* Concatenação *
+    Não usar o "+" para concatenar um texto com variáveis, pois existe a possibilidade do resultado ser diferente devido a tipagem dinâmica.
+
+
+---- NÚMEROS ----
+
+    - Number.isInteger : verifica se o número é inteiro ou não inteiro 
+    (true/false)
+
+    - NaN : Not a Number
+
+O JS, automaticamente, determina se uma variável do tipo númerica não inteira precisa de alta precisão.
+
+
+---- ATENÇÃO !!! ----
+
+obsoleto:
+    var : criação de variáveis
+    == : igual alta
+    ! : diferente de
+
+substituir por:
+    let : criação de variáveis
+    === : idêntico a 
+    !== : não idêntico a
+
+No JS podemos omitir as chaves nas estruturas de controle, porém, só uma linha de código é processada na estrutura (CUIDADO!!!!!!!!!!!!!!!!!!)
