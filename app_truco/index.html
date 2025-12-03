@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> TRUCO PAULISTA </title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-cards"></i> TRUCO PAULISTA </h1>
+            <p class="subtitle"> Um jogo de cartas tradicional brasileiro! </p>
+        </header>
+
+        <div class="game-info">
+            <div class="scoreboard">
+                <div class="player-score">
+                    <h3>Jogador</h3>
+                    <div class="score" id="player-score">0</div>
+                </div>
+                <div class="vs">
+                    <span>VS</span>
+                </div>
+                <div class="player-score">
+                    <h3>Computador</h3>
+                    <div class="score" id="computer-score">0</div>
+                </div>
+            </div>
+
+            <div class="round-info">
+                <div class="round">
+                    <h3>Rodada</h3>
+                    <div class="round-number" id="round-number">1</div>
+                </div>
+                <div class="turns">
+                    <h3>Turno</h3>
+                    <div class="turn-number" id="turn-number">1</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-area">
+            <div class="computer-area">
+                <h3>Computador</h3>
+                <div class="computer-cards" id="computer-cards">
+                    <!-- Cartas do computador serão exibidas aqui -->
+                </div>
+            </div>
+
+            <div class="table-area">
+                <div class="table-cards" id="table-cards">
+                    <!-- Cartas jogadas serão exibidas aqui -->
+                </div>
+                <div class="game-status" id="game-status">
+                    <p>Escolha uma carta para jogar!</p>
+                </div>
+                <button id="truco-btn" class="btn truco-btn">
+                    <i class="fas fa-bullhorn"></i> Truco!
+                </button>
+                <button id="next-round-btn" class="btn next-btn">
+                    <i class="fas fa-forward"></i> Próxima Rodada
+                </button>
+            </div>
+
+            <div class="player-area">
+                <h3>Jogador</h3>
+                <div class="player-cards" id="player-cards">
+                    <!-- Cartas do jogador serão exibidas aqui -->
+                </div>
+                <div class="player-actions">
+                    <button id="new-game-btn" class="btn new-game-btn">
+                        <i class="fas fa-play"></i> Novo Jogo
+                    </button>
+                    <button id="rules-btn" class="btn rules-btn">
+                        <i class="fas fa-book"></i> Regras
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-log">
+            <h3>Histórico do Jogo</h3>
+            <div class="log-content" id="game-log">
+                <!-- Histórico do jogo será exibido aqui -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Regras -->
+    <div id="rules-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Regras do Truco (Simplificado)</h2>
+            <ul>
+                <li>Cada jogador recebe 3 cartas</li>
+                <li>As cartas têm valores de 1 a 10 (com 4 naipes)</li>
+                <li>O objetivo é vencer 2 das 3 rodadas</li>
+                <li>Em cada rodada, os jogadores jogam uma carta</li>
+                <li>A carta mais forte vence a rodada</li>
+                <li>Valor das cartas: 3 > 2 > A > K > Q > J > 7 > 6 > 5 > 4</li>
+                <li>Você pode pedir "Truco!" para aumentar os pontos da rodada</li>
+            </ul>
+            <p><strong>Como jogar:</strong> Clique em uma carta da sua mão para jogá-la. O computador jogará
+                automaticamente.</p>
+        </div>
+    </div>
+
+    <script src="app.js"> </script>
+
+</body>
+
+</html>
