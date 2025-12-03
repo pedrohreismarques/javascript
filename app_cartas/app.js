@@ -1,24 +1,29 @@
 /**
  * 
- *  ---- TRUCO PAULISTA ----
+ * SORTEIO DE UMA CARTA
+ * 
+ * Exemplo de uso de array para otimizar o código.
  * 
  * @author Pedro Henrique
- * @version 1.0
  * 
  */
 
 function sortear() {
-
     let nipes = ["♥", "♦", "♣", "♠"];
     let faces = ["A", "2", "3", "J", "Q", "K"];
 
     let nipe = nipes[Math.floor(Math.random() * 4)];
     let face = faces[Math.floor(Math.random() * 10)];
 
-    // DEFINIR COR DO NAIPE
+    //apoio a lógica
+    //console.clear()
+    //console.log(nipe)
+    //console.log(face)
+
+    // Definir cor do naipe
     let corClasse;
 
-    if (nipe === "♥" || nipe === "♦") {
+    if (nipe === "♥" || nipe === "♦") { 
         corClasse = "vermelho";
     } else {
         corClasse = "preto";
@@ -26,19 +31,19 @@ function sortear() {
     console.log("Cor aplicada:", corClasse);
     //Se o naipe for copas (♥) ou ouros (♦) → a cor é vermelho caso ao contrário é preto
 
-    // CANTO SUPERIOR ESQUERDO
+    // Canto superior esquerdo
     document.getElementById("supESQ").innerHTML = `
         <div class="${corClasse}">${face}</div>
         <div class="${corClasse}">${nipe}</div>
     `;
 
-    // CANTO INFERIOR DIREITO
+    // Canto inferior direito
     document.getElementById("infDIR").innerHTML = `
         <div class="${corClasse}">${face}</div>
         <div class="${corClasse}">${nipe}</div>
     `;
 
-    // CENTRO
+    // Centro da carta
     if (face === "J") {
         document.getElementById('centroCarta').innerHTML = `<img src="img/valete.png" class="figura">`;
     } // Se a carta sorteada for J ela troca o meio pela imagem do valete
@@ -51,5 +56,4 @@ function sortear() {
     else {
         document.getElementById("centroCarta").innerHTML = `<div class="${corClasse}" style="font-size:6rem">${nipe}</div>`;
     } //Se a carta não for J, Q ou K, o centro mostra somente o símbolo do naipe.
-
 }

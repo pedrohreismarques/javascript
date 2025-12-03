@@ -1,0 +1,23 @@
+ESTUDO DO VETOR (array)
+
+Vetor é uma estrutura de dados indexada. Podemos também definir vetor como uma lista.
+
+    ---- 3 USOS DO VETOR DA LINGUAGEM DE PROGRAMAÇÃO ----
+
+    1. O vetor é usado para desenvolver jogos e aplicativos (Ex.: GENIUS);
+    2. Otimizar o uso de memória e simplificar o código;
+    3. Estrutura de dados (manipulação de banco de dados);
+
+De forma muito simples, vetor é uma forma de trabalhar com variáveis.
+
+Variável = Um valor
+
+Vetor = Múltiplos valores (lista)
+
+* Vetor NÃO é banco de dados *
+
+(Lembrar de fazer o jogo GENIUS)
+
+- Na linguagem JavaScript, vetor é um objeto e aceita valores de diferentes tipos.
+
+- Todo vetor (array) tem um índice que sempre inicia com o valor 0.

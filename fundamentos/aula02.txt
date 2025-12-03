@@ -26,7 +26,7 @@ O JS, automaticamente, determina se uma variável do tipo númerica não inteira
 
 obsoleto:
     var : criação de variáveis
-    == : igual alta
+    == : igual a
     ! : diferente de
 
 substituir por:

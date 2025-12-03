@@ -1,119 +1,81 @@
 * {
-
     margin: 0;
     padding: 0;
     border: 0;
-
 }
 
 .container{
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-
 }
 
 body{
-
-    background-color: #196d39;
+    background-color: #9c9c9c;
     font-family: sans-serif;
-    text-align: center;
-    color: white;
-
-}
-
-body h3 {
-
-    color: #ad2323;
-    font-size: 2.0rem;
-    margin-top: 30px;
-
-}
-
-body p {
-
-    font-size: 1.0rem;
-    margin: 15px 15px 0px 15px;
-
-}
-
-.manilha p {
-
-    font-size: 1.2rem;
-    color: white;
-
 }
 
 button{
-
-    padding: 20px 15px;
-    color: #ffffff;
-    background-color: #ad2323;
-    border: 1px solid #ffffff;
+    background-color: #ffc400;
+    border: 1px solid #000;
     border-radius: 10px;
     font-size: 1.2rem;
-    margin-top: 20px;
-
 }
 
 .carta{
-
     width: 250px;
     height: 350px;
-    background-color: #ffffff;
+    background-color: #ffff;
     margin-bottom: 50px;
     border-radius: 10px;
+    /*efeito 3D*/
     box-shadow: rgba(0,0,0, 0.4) 0px 2px 4px;
-    position: relative;
 
+
+
+    /* position
+        fixed: fixa o elemento no documento
+        relative: referência para o absolute
+        absolute: fixa o elemento com referência ao relative
+
+        Neste exemplo os elementos absolute vão
+    */
+    position: relative;
 }
 
 .canto{
-
     position: absolute;
     font-size: 2rem;
     text-align: center;
-
 }
 
 #supESQ{ 
-
     top: 20px;
     left: 15px;
-
 }
 
 #infDIR {
-
     bottom: 25px;
     right: 15px;
     transform: rotate(180deg);
-
 }
 
 .centro{
-
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
     font-size: 6rem;
-
 }
 
-/* CORES DOS NAIPES */
+/* Troca de cores dos naipes */
 
 .vermelho {
-
     color: red !important;
-
 }
 
 .preto {
-
     color: black !important;
-
 }
