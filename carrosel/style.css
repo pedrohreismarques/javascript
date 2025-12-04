@@ -1,0 +1,33 @@
+* {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+
+    max-width: 1080px;
+    margin: 0 auto;
+
+}
+
+.img {
+
+    max-width: 1080px;
+
+}
+
+/* Efeito fade manipulado pelo JS */
+#slides.fadeout {
+
+    opacity: 0.3;
+
+}
+
+#slides {
+
+     transition: opacity 2s; /* Ajuste junto com o JS */
+    opacity: 1;
+
+}
